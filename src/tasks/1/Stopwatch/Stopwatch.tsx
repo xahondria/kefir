@@ -15,6 +15,16 @@ class Stopwatch extends Component<IStopwatchProps, IStopwatchState> {
         runningTime: 0,
     };
 
+    getUnits(time: number) {
+        const seconds = time / 1000;
+
+        const min = Math.floor(seconds / 60).toString();
+        const sec = Math.floor(seconds % 60).toString();
+        const msec = (seconds % 1).toFixed(3).substring(2);
+
+        return `${min}:${sec}:${msec}`;
+    }
+
     handleClick = () => {
         this.setState((state) => {
             if (state.status) {
@@ -35,7 +45,7 @@ class Stopwatch extends Component<IStopwatchProps, IStopwatchState> {
     };
 
     handleLap = () => {
-        console.log(this.state.runningTime);
+        console.log(this.getUnits(this.state.runningTime));
     };
 
     componentWillUnmount() {
@@ -47,7 +57,7 @@ class Stopwatch extends Component<IStopwatchProps, IStopwatchState> {
 
         return (
             <div>
-                <p>{runningTime}ms</p>
+                <p>{this.getUnits(runningTime)}</p>
                 <button onClick={this.handleClick}>
                     {status ? "Stop" : "Start"}
                 </button>
