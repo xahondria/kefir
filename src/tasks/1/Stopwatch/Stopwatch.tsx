@@ -34,6 +34,10 @@ class Stopwatch extends Component<IStopwatchProps, IStopwatchState> {
         this.setState({runningTime: 0, status: false});
     };
 
+    handleLap = () => {
+        console.log(this.state.runningTime);
+    };
+
     componentWillUnmount() {
         clearInterval(this.timer);
     }
@@ -48,6 +52,7 @@ class Stopwatch extends Component<IStopwatchProps, IStopwatchState> {
                     {status ? "Stop" : "Start"}
                 </button>
                 <button onClick={this.handleReset}>Reset</button>
+                <button onClick={this.handleLap}>Lap</button>
             </div>
         );
     }
