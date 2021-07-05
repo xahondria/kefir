@@ -7,6 +7,7 @@ import img6 from "src/assets/avatars/han-solo.jpg";
 import img7 from "src/assets/avatars/gon.jpeg";
 import img8 from "src/assets/avatars/palpatine.jpeg";
 import img9 from "src/assets/avatars/general.jpeg";
+import img10 from "src/assets/avatars/chew.jpeg";
 
 const authors: any[] = [
     {
@@ -53,6 +54,11 @@ const authors: any[] = [
         id: 9,
         name: "General Grievous",
         avatar: img9,
+    },
+    {
+        id: 10,
+        name: "Chewbacca",
+        avatar: img10,
     },
 ];
 
