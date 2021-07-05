@@ -2,4 +2,5 @@
 
 1) Вывести на экран комментарии.
 
-![Пример](../../assets/example.png)
+![Пример](../../assets/comment_example.png)
+
