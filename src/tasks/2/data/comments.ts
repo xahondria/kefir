@@ -1,5 +1,19 @@
 const comments: any[] = [
     {
+        id: 100,
+        created: "2021-07-04T14:44:01.038111+00:00",
+        text: "Hello there!",
+        author: 1,
+        parent: null,
+    },
+    {
+        id: 100,
+        created: "2021-07-04T14:44:10.038111+00:00",
+        text: "General Kenobi",
+        author: 9,
+        parent: 100,
+    },
+    {
         id: 1,
         created: "2021-07-05T14:44:01.038111+00:00",
         text: "The Force will be with you. Always.",

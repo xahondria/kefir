@@ -1,4 +1,4 @@
-import img1 from "src/assets/obi-wan.0.jpg";
+import img1 from "src/assets/obi-wan.jpeg";
 import img2 from "src/assets/yoda.jpeg";
 import img3 from "src/assets/veider.jpeg";
 import img4 from "src/assets/walker.jpeg";
