@@ -1,0 +1,68 @@
+.element:not(:first-child) {
+  margin-top: 20px;
+}
+
+.list {
+  padding: 20px 0;
+  max-width: 600px;
+}
+
+.avatarWrapper {
+  margin-right: 20px;
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: lightgray;
+}
+
+.avatar {
+  width: 100%;
+  height: auto;
+}
+
+.userName {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.date {
+  margin: 0;
+  padding: 0;
+  font-size: .7em;
+  color: gray;
+}
+
+.header {
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.buttonHeart {
+  margin-right: 4px;
+  fill: lightgray;
+}
+
+.buttonHeartWrapper {
+  cursor: pointer;
+  fill: lightgray;
+}
+
+.buttonHeartWrapper_active {
+  fill: red;
+}
+
+.buttonHeartWrapper_active .buttonHeart {
+  fill: red;
+}
+
+.buttonHeartWrapper:hover {
+  stroke: gray;
+}
+
+.buttonHeartWrapper_active:hover {
+  stroke: red;
+}
+
