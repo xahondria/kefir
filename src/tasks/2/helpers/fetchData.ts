@@ -1,5 +1,5 @@
 import getDataRequest from '../data/getDataRequest';
-import { DataModel } from '../Models/dataModel';
+import { DataModel } from '../models/dataModel';
 
 export async function fetchData(
   setState: (state: DataModel | string) => void,

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import commentStyles from './Comment.module.css';
-import { CommentModel } from '../Models/commentModel';
-import { AuthorModel } from '../Models/authorModel';
-import { getChildCommentList } from '../helpers/comments';
+import { CommentModel } from '../../models/commentModel';
+import { AuthorModel } from '../../models/authorModel';
+import { getChildCommentList } from '../../helpers/comments';
 
 const Comment = (props: {comment: CommentModel, commentList?: Array<CommentModel>, authors?: Array<AuthorModel>, parent?: CommentModel}) => {
 

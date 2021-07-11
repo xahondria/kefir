@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Comment from '../Comment/Comment';
 import commentListStyles from './CommentList.module.css';
-import { DataModel } from '../Models/dataModel';
-import { fetchData } from '../helpers/fetchData';
-import { CommentModel } from '../Models/commentModel';
+import { DataModel } from '../../models/dataModel';
+import { fetchData } from '../../helpers/fetchData';
+import { CommentModel } from '../../models/commentModel';
 
 
 const CommentsList = () => {

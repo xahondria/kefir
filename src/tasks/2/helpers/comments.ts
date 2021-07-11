@@ -1,4 +1,4 @@
-import { CommentModel } from '../Models/commentModel';
+import { CommentModel } from '../models/commentModel';
 
 export const getChildCommentList = (comments: Array<CommentModel>, parent: CommentModel): Array<CommentModel> => {
   const childComments: Array<CommentModel> = [];

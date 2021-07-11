@@ -1,5 +1,5 @@
 import React from "react";
-import CommentsList from "src/tasks/2/CommentsList";
+import CommentsList from "src/tasks/2/components/CommentsList";
 
 function App() {
     return (
